@@ -57,10 +57,12 @@ console.log(onlineStore[0].inStock);
 //
 
 const handleliste = [];
+/*
 handleliste.push("Melk");
 handleliste.push("Mel");
 handleliste.push("Smør");
 handleliste.push("Egg");
+*/
 
 console.log(handleliste);
 
@@ -69,4 +71,24 @@ const pushButton = document.querySelector("#pushButton");
 
 pushButton.addEventListener("click", function () {
   console.log("Knapp er trykket!");
+
+  const userInput = document.querySelector("#userInput").value;
+  console.log(userInput);
+
+  handleliste.push(userInput);
+  console.log(handleliste);
+
+  const displayOutput = document.querySelector("#displayOutput");
+ displayOutput.textContent = handleliste;
+
 });
+
+const popButton = document.querySelector("#popButton");
+
+popButton.addEventListener("click",function () {
+  handleliste.pop();
+
+  const displayOutput = document.querySelector("#displayOutput");
+  displayOutput.textContent = handleliste;
+
+})
