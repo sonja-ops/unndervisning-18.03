@@ -8,6 +8,7 @@ const movies = [
 ];
 
 console.log(movies);
+console.log(movies[2]);
 
 //
 //
@@ -20,6 +21,9 @@ const groceries = {
 };
 
 console.log(groceries);
+console.log(groceries.fruits[0]);
+console.log(groceries.vegetables[2]);
+console.log(groceries.dairy[1]);
 
 //
 //
@@ -44,10 +48,22 @@ const onlineStore = [
 ];
 
 console.log(onlineStore);
+console.log(onlineStore[0].name);
+console.log(onlineStore[2].price);
+console.log(onlineStore[0].inStock);
 
 //
 //
 //
+
+const handleliste = [];
+handleliste.push("Melk");
+handleliste.push("Mel");
+handleliste.push("Smør");
+handleliste.push("Egg");
+
+console.log(handleliste);
+
 
 const pushButton = document.querySelector("#pushButton");
 
